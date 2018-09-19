@@ -1,15 +1,16 @@
 import * as t from './actionTypes';
 
 export const initialState = {
-  title: '',
-  tagline: '',
-  overview: '',
-  genres: '',
-  productionCompanies: '',
-  releaseDate: '',
-  runtime: '',
-  revenue: '',
-  voteAvarage: ''
+  title: 'The Godfather',
+  tagline: "An offer you can't refuse.",
+  overview:
+    'Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.',
+  genres: 'Drama, Crime',
+  productionCompanies: 'Paramount',
+  releaseDate: 'Alfran Productions',
+  runtime: '175',
+  revenue: '245,066,411',
+  voteAvarage: '8.6'
 };
 export default (state = initialState, action) => {
   switch (action.type) {

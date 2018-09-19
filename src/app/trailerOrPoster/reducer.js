@@ -1,6 +1,6 @@
 import * as t from './actionTypes';
 
-export const initialState = '';
+export const initialState = 'fBNpSRtfIUA';
 
 export default (state = initialState, action) => {
   switch (action.type) {
