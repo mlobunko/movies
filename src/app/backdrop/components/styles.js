@@ -7,8 +7,8 @@ export const StyledBackdropComponent = styled.div`
     props.backdropPath &&
     `
     linear-gradient(
-      rgba(60, 60, 60, 0.8),
-      rgba(60, 60, 60, 0.8)
+      rgba(11, 11, 11, 0.8),
+      rgba(11, 11, 11, 0.8)
     ),
     url(https://image.tmdb.org/t/p/original${
       props.backdropPath

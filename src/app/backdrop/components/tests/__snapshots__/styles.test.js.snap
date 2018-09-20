@@ -8,6 +8,6 @@ exports[`StyledBackdropComponent renders correctly, props.backdropPath false 1`]
 
 exports[`StyledBackdropComponent renders correctly, props.backdropPath true 1`] = `
 <div
-  className="sc-bdVaJa fEDdOA"
+  className="sc-bdVaJa iGQWwS"
 />
 `;
