@@ -1,16 +1,16 @@
 import * as t from './actionTypes';
 
 export const initialState = {
-  title: 'The Godfather',
-  tagline: "An offer you can't refuse.",
+  title: 'The Lion King',
+  tagline:
+    "Life's greatest adventure is finding your place in the Circle of Life.",
   overview:
-    'Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.',
-  genres: 'Drama, Crime',
-  productionCompanies: 'Paramount',
-  releaseDate: 'Alfran Productions',
-  runtime: '175',
-  revenue: '245,066,411',
-  voteAvarage: '8.6'
+    "A young lion cub named Simba can't wait to be king. But his uncle craves the title for himself and will stop at nothing to get it.",
+  productionCompanies: 'Walt Disney Pictures, Walt Disney Animation Studios',
+  releaseDate: '1994-06-23',
+  runtime: '89',
+  revenue: '987,483,777',
+  voteAvarage: '8.1'
 };
 export default (state = initialState, action) => {
   switch (action.type) {
