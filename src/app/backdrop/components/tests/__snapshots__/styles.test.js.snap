@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledBackdropComponent renders correctly, props.backdropPath false 1`] = `
+<div
+  className="sc-bdVaJa kwTejL"
+/>
+`;
+
+exports[`StyledBackdropComponent renders correctly, props.backdropPath true 1`] = `
+<div
+  className="sc-bdVaJa fEDdOA"
+/>
+`;
