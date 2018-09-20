@@ -6,12 +6,37 @@ describe('reducer', () => {
     expect(reducer(undefined, {})).toEqual(initialState);
   });
 
-  it(`handle ${t.SET_TRAILER_OR_POSTER}`, () => {
+  it(`handle ${t.SET_POSTER}`, () => {
     const text = 'family';
     const action = {
-      type: t.SET_TRAILER_OR_POSTER,
+      type: t.SET_POSTER,
       text
     };
-    expect(reducer(initialState, action)).toEqual(text);
+    const state = {
+      posterPath: '',
+      trailerPath: ''
+    };
+    const expectedState = {
+      posterPath: text,
+      trailerPath: ''
+    };
+    expect(reducer(state, action)).toEqual(expectedState);
+  });
+
+  it(`handle ${t.SET_TRAILER}`, () => {
+    const text = 'family';
+    const action = {
+      type: t.SET_TRAILER,
+      text
+    };
+    const state = {
+      posterPath: '',
+      trailerPath: ''
+    };
+    const expectedState = {
+      posterPath: '',
+      trailerPath: text
+    };
+    expect(reducer(state, action)).toEqual(expectedState);
   });
 });

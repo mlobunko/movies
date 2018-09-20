@@ -3,6 +3,8 @@
 exports[`render renders correctly 1`] = `
 <StyledMainComponent>
   <Header />
-  <Connect(BackdropComponent) />
+  <Connect(BackdropComponent)>
+    <Connect(TrailerOrPosterComponent) />
+  </Connect(BackdropComponent)>
 </StyledMainComponent>
 `;

@@ -1,6 +1,11 @@
 import * as t from './actionTypes';
 
-export const setTrailerOrPoster = text => ({
-  type: t.SET_TRAILER_OR_POSTER,
+export const setTrailer = text => ({
+  type: t.SET_TRAILER,
+  text
+});
+
+export const setPoster = text => ({
+  type: t.SET_POSTER,
   text
 });

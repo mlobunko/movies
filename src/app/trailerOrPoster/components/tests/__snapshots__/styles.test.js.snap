@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledPoster renders correctly 1`] = `
+<div
+  className="sc-bdVaJa dLEHil"
+/>
+`;
+
+exports[`StyledPosterContainer renders correctly 1`] = `
+<div
+  className="sc-htpNat byZALs"
+/>
+`;
+
+exports[`StyledPosterContent renders correctly 1`] = `
+<div
+  className="sc-ifAKCX bGkqyn"
+/>
+`;
+
+exports[`StyledTrailer renders correctly 1`] = `
+<iframe
+  allow="autoplay; encrypted-media"
+  allowFullScreen={true}
+  className="sc-bwzfXH isPazB"
+  frameBorder="0"
+  src="https://www.youtube.com/embed/cba?rel=0&amp;showinfo=0"
+/>
+`;
+
+exports[`StyledTrailerContainer renders correctly 1`] = `
+<div
+  className="sc-bxivhb ivXFnf"
+/>
+`;
+
+exports[`StyledTrailerContent renders correctly 1`] = `
+<div
+  className="sc-EHOje fjEyDX"
+/>
+`;

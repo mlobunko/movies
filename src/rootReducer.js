@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import backdrop from 'app/backdrop';
-// import timer from "app/timer";
+import trailerOrPoster from 'app/trailerOrPoster';
 
 export default combineReducers({
-  [backdrop.constants.NAME]: backdrop.reducer
-  // [timer.constants.NAME]: timer.rootReducer
+  [backdrop.constants.NAME]: backdrop.reducer,
+  [trailerOrPoster.constants.NAME]: trailerOrPoster.reducer
 });

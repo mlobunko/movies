@@ -1,11 +1,21 @@
 import { NAME } from '../constants';
-import { getAll } from '../selectors';
+import { getPoster, getTrailer } from '../selectors';
 
-describe('getAll', () => {
+const state = {
+  [NAME]: {
+    posterPath: 'family',
+    trailerPath: 'abc'
+  }
+};
+
+describe('getPoster', () => {
   it('return part of state', () => {
-    const state = {
-      [NAME]: 'family'
-    };
-    expect(getAll(state)).toEqual(state[NAME]);
+    expect(getPoster(state)).toEqual('family');
+  });
+});
+
+describe('getTrailer', () => {
+  it('return part of state', () => {
+    expect(getTrailer(state)).toEqual('abc');
   });
 });
