@@ -1,4 +1,10 @@
-import styled from 'styled-components';
+import styled, { injectGlobal } from 'styled-components';
+
+injectGlobal`
+  body {
+    background: black
+  }
+`;
 
 export const StyledMainComponent = styled.div`
   background: rgb(0, 0, 0);

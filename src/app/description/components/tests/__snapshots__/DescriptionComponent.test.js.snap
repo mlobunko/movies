@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render renders correctly 1`] = `
+<StyledDescription>
+  <br />
+  <h2>
+    family
+  </h2>
+  <StyledTagline>
+    abcd
+  </StyledTagline>
+  <p>
+    overview
+  </p>
+  <br />
+  <StyledList>
+    <StyledLabel>
+      Genres:
+    </StyledLabel>
+     
+    drama
+  </StyledList>
+  <StyledList>
+    <StyledLabel>
+      Production Companies:
+    </StyledLabel>
+     
+    flower
+  </StyledList>
+  <StyledRowLeft>
+    <styled.div>
+      <div>
+        <StyledLabel>
+          Release Date:
+        </StyledLabel>
+      </div>
+      <div>
+        02-02-2004
+      </div>
+    </styled.div>
+    <StyledRowRight>
+      <div>
+        <StyledLabel>
+          Runtime:
+        </StyledLabel>
+      </div>
+      <div>
+        89
+         mins
+      </div>
+    </StyledRowRight>
+  </StyledRowLeft>
+  <StyledRowLeft>
+    <styled.div>
+      <div>
+        <StyledLabel>
+          Revenue:
+        </StyledLabel>
+      </div>
+      <div>
+        $
+        222
+      </div>
+    </styled.div>
+    <StyledRowRight>
+      <div>
+        <StyledLabel>
+          Vote Avarage:
+        </StyledLabel>
+      </div>
+      <div>
+        4.2
+        /10
+      </div>
+    </StyledRowRight>
+  </StyledRowLeft>
+</StyledDescription>
+`;

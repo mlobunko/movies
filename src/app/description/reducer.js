@@ -6,6 +6,7 @@ export const initialState = {
     "Life's greatest adventure is finding your place in the Circle of Life.",
   overview:
     "A young lion cub named Simba can't wait to be king. But his uncle craves the title for himself and will stop at nothing to get it.",
+  genres: 'Family, Animation, Drama',
   productionCompanies: 'Walt Disney Pictures, Walt Disney Animation Studios',
   releaseDate: '1994-06-23',
   runtime: '89',

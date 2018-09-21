@@ -12,7 +12,8 @@ export const StyledBackdropComponent = styled.div`
     ),
     url(https://image.tmdb.org/t/p/original${
       props.backdropPath
-    }) no-repeat center center / cover`};
+    }) no-repeat center center / cover
+    `};
 `;
 
 StyledBackdropComponent.displayName = 'StyledBackdropComponent';
