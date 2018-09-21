@@ -65,6 +65,9 @@ export const DescriptionComponent = ({
         </div>
       </StyledRowRight>
     </StyledRow>
+    <br />
+    <br />
+    <br />
   </StyledDescription>
 );
 

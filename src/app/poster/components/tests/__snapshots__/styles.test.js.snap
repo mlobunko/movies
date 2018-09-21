@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledPoster renders correctly 1`] = `
+<div
+  className="sc-bdVaJa dLEHil"
+/>
+`;
+
+exports[`StyledPosterContainer renders correctly 1`] = `
+<div
+  className="sc-bwzfXH cAyBcM"
+/>
+`;
+
+exports[`StyledPosterContent renders correctly 1`] = `
+<div
+  className="sc-htpNat jIWaBW"
+/>
+`;

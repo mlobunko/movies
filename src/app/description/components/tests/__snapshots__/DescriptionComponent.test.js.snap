@@ -74,5 +74,8 @@ exports[`render renders correctly 1`] = `
       </div>
     </StyledRowRight>
   </StyledRowLeft>
+  <br />
+  <br />
+  <br />
 </StyledDescription>
 `;
