@@ -1,24 +1,17 @@
 import * as t from '../actionTypes';
-import { setTrailer, setPoster } from '../actions';
+import { setTrailerOrPoster } from '../actions';
 
-describe('setTrailer', () => {
+describe('setTrailerOrPoster', () => {
   it('return action', () => {
-    const text = 'family';
+    const text = {
+      posterPath: 'abc',
+      trailerPath: 'cba'
+    };
+
     const action = {
-      type: t.SET_TRAILER,
+      type: t.SET_TRAILER_OR_POSTER,
       text
     };
-    expect(setTrailer(text)).toEqual(action);
-  });
-});
-
-describe('setPoster', () => {
-  it('return action', () => {
-    const text = 'family';
-    const action = {
-      type: t.SET_POSTER,
-      text
-    };
-    expect(setPoster(text)).toEqual(action);
+    expect(setTrailerOrPoster(text)).toEqual(action);
   });
 });
