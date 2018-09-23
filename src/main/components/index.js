@@ -1,3 +1,3 @@
-import Main from "./MainComponent";
+import Main from './MainContainer';
 
 export default Main;
