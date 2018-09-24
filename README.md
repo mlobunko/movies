@@ -68,3 +68,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 - [Flaticon](https://www.flaticon.com/) - Play Icon
 - [TMDb](https://www.themoviedb.org) - Movie and TV database
+- [PosterMyWall](https://www.postermywall.com/) - The fallback poster
