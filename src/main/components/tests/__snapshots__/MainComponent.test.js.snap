@@ -6,8 +6,10 @@ exports[`render renders correctly, error false 1`] = `
     <Header />
     <Connect(BackdropComponent)>
       <Connect(SearchInputContainer) />
-      <Connect(PosterComponent) />
-      <Connect(DescriptionComponent) />
+      <StyledContent>
+        <Connect(PosterComponent) />
+        <Connect(DescriptionComponent) />
+      </StyledContent>
     </Connect(BackdropComponent)>
   </ErrorBoundary>
 </StyledMainComponent>

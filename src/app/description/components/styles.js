@@ -2,8 +2,11 @@ import styled from 'styled-components';
 
 export const StyledDescription = styled.div`
   width: 90%;
-  max-width: 640px;
+  max-width: 520px;
   margin: 0 auto;
+  @media (min-width: 768px) {
+    margin-left: 3rem;
+  }
 `;
 
 StyledDescription.displayName = 'StyledDescription';

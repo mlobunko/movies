@@ -2,7 +2,7 @@
 
 exports[`StyledDescription renders correctly 1`] = `
 <div
-  className="sc-bdVaJa jrnoBA"
+  className="sc-bdVaJa bOLget"
 />
 `;
 

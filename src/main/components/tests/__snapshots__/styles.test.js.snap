@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledContent renders correctly 1`] = `
+<div
+  className="sc-bdVaJa OeQJQ"
+/>
+`;
+
+exports[`StyledMainComponent renders correctly 1`] = `
+<div
+  className="sc-bwzfXH uTxCW"
+/>
+`;

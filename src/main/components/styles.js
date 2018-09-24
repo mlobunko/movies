@@ -11,6 +11,19 @@ injectGlobal`
   }
 `;
 
+export const StyledContent = styled.div`
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1200px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
+
+StyledContent.displayName = 'StyledContent';
+
 export const StyledMainComponent = styled.div``;
 
 StyledMainComponent.displayName = 'StyledMainComponent';

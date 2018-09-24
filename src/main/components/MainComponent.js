@@ -8,7 +8,7 @@ import Poster from 'app/poster/components';
 import SearchInput from 'app/searchInput/components';
 
 import ErrorBoundary from './ErrorBoundary';
-import { StyledMainComponent } from './styles';
+import { StyledContent, StyledMainComponent } from './styles';
 
 export const MainComponent = ({ error }) => (
   <StyledMainComponent>
@@ -19,8 +19,10 @@ export const MainComponent = ({ error }) => (
       ) : (
         <Backdrop>
           <SearchInput />
-          <Poster />
-          <Description />
+          <StyledContent>
+            <Poster />
+            <Description />
+          </StyledContent>
         </Backdrop>
       )}
     </ErrorBoundary>
