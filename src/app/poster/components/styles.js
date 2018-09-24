@@ -1,12 +1,15 @@
 import styled from 'styled-components';
+import fallbackPoster from '../images/fallbackPoster.jpg';
 
 export const StyledPoster = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background: ${props => `url(https://image.tmdb.org/t/p/original${
+  background: ${props =>
     props.posterPath
-  })
+      ? `url(https://image.tmdb.org/t/p/original${props.posterPath})
+    no-repeat center center / cover`
+      : `url(${fallbackPoster})
     no-repeat center center / cover`};
 `;
 
