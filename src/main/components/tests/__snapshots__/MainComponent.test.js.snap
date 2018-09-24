@@ -1,26 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`render renders correctly, error false 1`] = `
-<ErrorBoundary>
-  <Header />
-  <Connect(BackdropComponent)>
-    <Connect(PosterComponent) />
-    <Connect(DescriptionComponent) />
-  </Connect(BackdropComponent)>
-</ErrorBoundary>
+<StyledMainComponent>
+  <ErrorBoundary>
+    <Header />
+    <Connect(BackdropComponent)>
+      <Connect(SearchInputContainer) />
+      <Connect(PosterComponent) />
+      <Connect(DescriptionComponent) />
+    </Connect(BackdropComponent)>
+  </ErrorBoundary>
+</StyledMainComponent>
 `;
 
 exports[`render renders correctly, error true 1`] = `
-<ErrorBoundary>
-  <Header />
-  <h1
-    style={
-      Object {
-        "textAlign": "center",
+<StyledMainComponent>
+  <ErrorBoundary>
+    <Header />
+    <h1
+      style={
+        Object {
+          "textAlign": "center",
+        }
       }
-    }
-  >
-    Something went wrong.
-  </h1>
-</ErrorBoundary>
+    >
+      Something went wrong.
+    </h1>
+  </ErrorBoundary>
+</StyledMainComponent>
 `;

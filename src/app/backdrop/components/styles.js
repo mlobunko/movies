@@ -7,8 +7,7 @@ export const StyledBackdropComponent = styled.div`
     props.backdropPath &&
     `
     linear-gradient(
-      rgba(0, 0, 0, 1),
-      rgba(11, 11, 11, 0.8) 2%,
+      rgba(11, 11, 11, 0.8),
       rgba(11, 11, 11, 0.8) 98%,
       rgba(0, 0, 0, 1) 100%
     ),

@@ -1,13 +1,13 @@
 import * as t from './actionTypes';
 
-export const makeRequestForSearch = valueForSearch => ({
-  type: t.MAKE_REQUEST_FOR_SEARCH,
-  valueForSearch
-});
-
 export const makeRequestForDetails = id => ({
   type: t.MAKE_REQUEST_FOR_DETAILS,
   id
+});
+
+export const makeRequestForSearch = valueForSearch => ({
+  type: t.MAKE_REQUEST_FOR_SEARCH,
+  valueForSearch
 });
 
 export const setError = () => ({

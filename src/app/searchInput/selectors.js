@@ -36,3 +36,5 @@ export const getPosterPathFromData = data => data['poster_path'];
 export const getSuggestionsFromData = data => data['results'].slice(0, 5);
 
 export const getSuggestionsFromState = state => state[NAME]['suggestions'];
+
+export const getSuggestionValue = suggestion => suggestion.title;

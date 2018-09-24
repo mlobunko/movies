@@ -11,38 +11,12 @@ import * as t from './actionTypes';
 
 export const errorHandler = function*(e) {
   yield put(actions.setError());
-  yield call(console.log, `error: ${e}`);
-};
-
-export const watchMakeRequestForSearch = function*() {
-  while (true) {
-    const valueForSearch = yield take(t.MAKE_REQUEST_FOR_SEARCH);
-    const errorFromState = yield select(selectors.getErrorFromState);
-    if (!!errorFromState) {
-      yield put(actions.setErrorToNull());
-    }
-    try {
-      const response = yield call(
-        fetch,
-        model.getRequestSearchMovies(valueForSearch)
-      );
-      const data = yield call([response, response.json]);
-      if (!!data['status_message']) {
-        yield call(errorHandler, data);
-      } else {
-        yield put(
-          actions.setSuggestions(selectors.getSuggestionsFromData(data))
-        );
-      }
-    } catch (e) {
-      yield call(errorHandler, e);
-    }
-  }
+  yield call(console.log, 'error:', e);
 };
 
 export const watchMakeRequestForDetails = function*() {
   while (true) {
-    const id = yield take(t.MAKE_REQUEST_FOR_DETAILS);
+    const { id } = yield take(t.MAKE_REQUEST_FOR_DETAILS);
     const errorFromState = yield select(selectors.getErrorFromState);
     if (!!errorFromState) {
       yield put(actions.setErrorToNull());
@@ -63,6 +37,32 @@ export const watchMakeRequestForDetails = function*() {
         );
         yield put(
           poster.actions.setPoster(selectors.getPosterPathFromData(data))
+        );
+      }
+    } catch (e) {
+      yield call(errorHandler, e);
+    }
+  }
+};
+
+export const watchMakeRequestForSearch = function*() {
+  while (true) {
+    const { valueForSearch } = yield take(t.MAKE_REQUEST_FOR_SEARCH);
+    const errorFromState = yield select(selectors.getErrorFromState);
+    if (!!errorFromState) {
+      yield put(actions.setErrorToNull());
+    }
+    try {
+      const response = yield call(
+        fetch,
+        model.getRequestSearchMovies(valueForSearch)
+      );
+      const data = yield call([response, response.json]);
+      if (!!data['status_message']) {
+        yield call(errorHandler, data);
+      } else {
+        yield put(
+          actions.setSuggestions(selectors.getSuggestionsFromData(data))
         );
       }
     } catch (e) {

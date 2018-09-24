@@ -1,11 +1,11 @@
-import { all, call, spawn } from "redux-saga/effects";
+import { all, call, spawn } from 'redux-saga/effects';
 
-// import timer from "app/timer";
+import searchInput from 'app/searchInput';
 
 export default function* rootSaga() {
   const sagas = [
-    // timer.main.saga.watchStartTimer,
-    // timer.main.saga.watchResetTimer
+    searchInput.saga.watchMakeRequestForDetails,
+    searchInput.saga.watchMakeRequestForSearch
   ];
 
   yield all(

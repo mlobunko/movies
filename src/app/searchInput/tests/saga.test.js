@@ -32,7 +32,7 @@ describe('errorHandler', () => {
       .put(actions.setError())
 
       .next()
-      .call(console.log, `error: ${e}`)
+      .call(console.log, 'error:', e)
 
       .next()
       .isDone();
@@ -40,7 +40,9 @@ describe('errorHandler', () => {
 });
 
 describe('watchMakeRequestForDetails', () => {
-  const id = '123';
+  const action = {
+    id: '123'
+  };
   const dataErrorFalse = {
     genres: [{ name: 'f' }, { name: 'g' }],
     production_companies: [{ name: 'a' }, { name: 'b' }],
@@ -52,7 +54,7 @@ describe('watchMakeRequestForDetails', () => {
       .next()
       .take(t.MAKE_REQUEST_FOR_DETAILS)
 
-      .next(id)
+      .next(action)
       .select(selectors.getErrorFromState)
 
       .next(errorFromStateTrue)
@@ -60,7 +62,7 @@ describe('watchMakeRequestForDetails', () => {
 
       .back()
       .next(errorFromStateFalse)
-      .call(fetch, model.getRequestMovieDetails(id))
+      .call(fetch, model.getRequestMovieDetails(action.id))
 
       .throw(e)
       .call(errorHandler, e)
@@ -101,7 +103,9 @@ describe('watchMakeRequestForDetails', () => {
 });
 
 describe('watchMakeRequestForSearch', () => {
-  const valueForSearch = '123';
+  const action = {
+    valueForSearch: '123'
+  };
   const dataErrorFalse = {
     results: ['a', 'b', 'c']
   };
@@ -111,7 +115,7 @@ describe('watchMakeRequestForSearch', () => {
       .next()
       .take(t.MAKE_REQUEST_FOR_SEARCH)
 
-      .next(valueForSearch)
+      .next(action)
       .select(selectors.getErrorFromState)
 
       .next(errorFromStateTrue)
@@ -119,7 +123,7 @@ describe('watchMakeRequestForSearch', () => {
 
       .back()
       .next(errorFromStateFalse)
-      .call(fetch, model.getRequestSearchMovies(valueForSearch))
+      .call(fetch, model.getRequestSearchMovies(action.valueForSearch))
 
       .throw(e)
       .call(errorHandler, e)
