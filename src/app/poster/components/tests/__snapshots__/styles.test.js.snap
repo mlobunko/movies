@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StyledPoster renders correctly 1`] = `
+exports[`StyledPoster renders correctly, posterPath false 1`] = `
+<div
+  className="sc-bdVaJa yezOw"
+/>
+`;
+
+exports[`StyledPoster renders correctly, posterPath true 1`] = `
 <div
   className="sc-bdVaJa dLEHil"
 />

@@ -11,8 +11,13 @@ import {
 const posterPath = 'abc';
 
 describe('StyledPoster', () => {
-  it('renders correctly', () => {
+  it('renders correctly, posterPath true', () => {
     const wrapper = shallow(<StyledPoster posterPath={posterPath} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('renders correctly, posterPath false', () => {
+    const wrapper = shallow(<StyledPoster posterPath={''} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

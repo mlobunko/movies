@@ -1,15 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render posterPath false 1`] = `<Fragment />`;
-
-exports[`render posterPath true 1`] = `
-<Fragment>
-  <StyledPosterContainer>
-    <StyledPosterContent>
-      <StyledPoster
-        posterPath="abc"
-      />
-    </StyledPosterContent>
-  </StyledPosterContainer>
-</Fragment>
+exports[`render renders correctly 1`] = `
+<StyledPosterContainer>
+  <StyledPosterContent>
+    <StyledPoster
+      posterPath="abc"
+    />
+  </StyledPosterContent>
+</StyledPosterContainer>
 `;
