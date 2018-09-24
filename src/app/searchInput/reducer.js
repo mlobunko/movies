@@ -1,7 +1,7 @@
 import * as t from './actionTypes';
 
 export const initialState = {
-  searchResult: '',
+  suggestions: [],
   error: ''
 };
 
@@ -17,10 +17,10 @@ export default (state = initialState, action) => {
         ...state,
         error: ''
       };
-    case t.SET_SEARCH_RESULT:
+    case t.SET_SUGGESTIONS:
       return {
         ...state,
-        searchResult: action.result
+        suggestions: action.suggestions
       };
     default:
       return state;

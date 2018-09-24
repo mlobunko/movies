@@ -11,7 +11,7 @@ describe('reducer', () => {
       type: t.SET_ERROR
     };
     const expectedState = {
-      searchResult: '',
+      ...initialState,
       error: 'Something went wrong'
     };
     expect(reducer(initialState, action)).toEqual(expectedState);
@@ -19,28 +19,28 @@ describe('reducer', () => {
 
   it(`handle ${t.SET_ERROR_TO_NULL}`, () => {
     const state = {
-      searchResult: '',
+      ...initialState,
       error: 'Something went wrong'
     };
     const action = {
       type: t.SET_ERROR_TO_NULL
     };
     const expectedState = {
-      searchResult: '',
+      ...initialState,
       error: ''
     };
     expect(reducer(state, action)).toEqual(expectedState);
   });
 
-  it(`handle ${t.SET_SEARCH_RESULT}`, () => {
-    const result = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+  it(`handle ${t.SET_SUGGESTIONS}`, () => {
+    const suggestions = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
     const action = {
-      type: t.SET_SEARCH_RESULT,
-      result
+      type: t.SET_SUGGESTIONS,
+      suggestions
     };
     const expectedState = {
-      searchResult: result,
-      error: ''
+      ...initialState,
+      suggestions
     };
     expect(reducer(initialState, action)).toEqual(expectedState);
   });

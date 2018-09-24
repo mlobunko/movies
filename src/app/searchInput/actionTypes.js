@@ -1,6 +1,6 @@
 import { NAME } from './constants';
 
-export const SET_SEARCH_RESULT = `${NAME}/SET_SEARCH_RESULT`;
+export const SET_SUGGESTIONS = `${NAME}/SET_SUGGESTIONS`;
 
 export const MAKE_REQUEST_FOR_SEARCH = `${NAME}/MAKE_REQUEST_FOR_SEARCH`;
 

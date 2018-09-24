@@ -4,7 +4,7 @@ import {
   makeRequestForSearch,
   setError,
   setErrorToNull,
-  setSearchResult
+  setSuggestions
 } from '../actions';
 
 describe('makeRequestForDetails', () => {
@@ -20,12 +20,12 @@ describe('makeRequestForDetails', () => {
 
 describe('makeRequestForSearch', () => {
   it('return action', () => {
-    const value = 'family';
+    const valueForSearch = 'family';
     const expectedAction = {
       type: t.MAKE_REQUEST_FOR_SEARCH,
-      value
+      valueForSearch
     };
-    expect(makeRequestForSearch(value)).toEqual(expectedAction);
+    expect(makeRequestForSearch(valueForSearch)).toEqual(expectedAction);
   });
 });
 
@@ -47,13 +47,13 @@ describe('setErrorToNull', () => {
   });
 });
 
-describe('setSearchResult', () => {
+describe('setSuggestions', () => {
   it('return action', () => {
-    const result = ['a', 'b', 'c', 'd', 'e'];
+    const suggestions = ['a', 'b', 'c', 'd', 'e'];
     const expectedAction = {
-      type: t.SET_SEARCH_RESULT,
-      result
+      type: t.SET_SUGGESTIONS,
+      suggestions
     };
-    expect(setSearchResult(result)).toEqual(expectedAction);
+    expect(setSuggestions(suggestions)).toEqual(expectedAction);
   });
 });

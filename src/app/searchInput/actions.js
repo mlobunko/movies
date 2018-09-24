@@ -1,8 +1,8 @@
 import * as t from './actionTypes';
 
-export const makeRequestForSearch = value => ({
+export const makeRequestForSearch = valueForSearch => ({
   type: t.MAKE_REQUEST_FOR_SEARCH,
-  value
+  valueForSearch
 });
 
 export const makeRequestForDetails = id => ({
@@ -18,7 +18,7 @@ export const setErrorToNull = () => ({
   type: t.SET_ERROR_TO_NULL
 });
 
-export const setSearchResult = result => ({
-  type: t.SET_SEARCH_RESULT,
-  result
+export const setSuggestions = suggestions => ({
+  type: t.SET_SUGGESTIONS,
+  suggestions
 });

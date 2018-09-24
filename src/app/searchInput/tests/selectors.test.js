@@ -1,11 +1,14 @@
+import { NAME } from '../constants';
+
 import {
   getBackdropPathFromData,
   getDescriptionFromData,
+  getErrorFromState,
   getIdFromSelected,
   getList,
   getPosterPathFromData,
-  getSearchResultFromData,
-  getSearchResultFromState
+  getSuggestionsFromData,
+  getSuggestionsFromState
 } from '../selectors';
 
 import { detailsData } from './mocks';
@@ -38,6 +41,17 @@ describe('getDescriptionFromData', () => {
   });
 });
 
+describe('getErrorFromState', () => {
+  it('return correct error', () => {
+    const state = {
+      [NAME]: {
+        error: '123'
+      }
+    };
+    expect(getErrorFromState(state)).toEqual('123');
+  });
+});
+
 describe('getIdFromSelected', () => {
   it('return correct id', () => {
     const selected = {
@@ -62,24 +76,24 @@ describe('getPosterPathFromData', () => {
   });
 });
 
-describe('getSearchResultFromData', () => {
+describe('getSuggestionsFromData', () => {
   it('return correct array', () => {
     const data = {
       results: ['a', 'b', 'c', 'd', 'e', 'f', 'g']
     };
 
     const expectedArr = ['a', 'b', 'c', 'd', 'e'];
-    expect(getSearchResultFromData(data)).toEqual(expectedArr);
+    expect(getSuggestionsFromData(data)).toEqual(expectedArr);
   });
 });
 
-describe('getSearchResultFromState', () => {
+describe('getSuggestionsState', () => {
   it('return correct part of state', () => {
     const state = {
-      searchInput: {
-        searchResult: ['a', 'b', 'c']
+      [NAME]: {
+        suggestions: ['a', 'b', 'c']
       }
     };
-    expect(getSearchResultFromState(state)).toEqual(['a', 'b', 'c']);
+    expect(getSuggestionsFromState(state)).toEqual(['a', 'b', 'c']);
   });
 });
