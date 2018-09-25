@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render renders correctly 1`] = `
+<StyledContainer>
+  <Autosuggest
+    alwaysRenderSuggestions={false}
+    focusInputOnSuggestionClick={true}
+    getSuggestionValue={[Function]}
+    highlightFirstSuggestion={false}
+    id="1"
+    inputProps={
+      Object {
+        "aria-label": "search movies",
+        "onChange": [Function],
+        "placeholder": "Search Movie Title...",
+        "value": "",
+      }
+    }
+    multiSection={false}
+    onSuggestionSelected={[Function]}
+    onSuggestionsClearRequested={[Function]}
+    onSuggestionsFetchRequested={[Function]}
+    renderSuggestion={[Function]}
+    renderSuggestionsContainer={[Function]}
+    shouldRenderSuggestions={[Function]}
+    suggestions={Array []}
+    theme={
+      Object {
+        "container": Object {
+          "position": "relative",
+        },
+        "input": Object {
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "none",
+          "borderBottom": "1px solid white",
+          "color": "white",
+          "fontSize": 16,
+          "height": 30,
+          "padding": "10px 20px",
+          "width": "100%",
+        },
+        "inputFocused": Object {
+          "outline": "none",
+        },
+        "inputOpen": Object {
+          "borderBottomLeftRadius": 0,
+          "borderBottomRightRadius": 0,
+        },
+        "suggestion": Object {
+          "cursor": "pointer",
+          "padding": "10px 20px",
+        },
+        "suggestionHighlighted": Object {
+          "backgroundColor": "#fff",
+          "color": "#000",
+        },
+        "suggestionsContainer": Object {
+          "display": "none",
+        },
+        "suggestionsContainerOpen": Object {
+          "background": "rgba(0, 0, 0, 0.8)",
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "display": "block",
+          "position": "absolute",
+          "width": "100%",
+          "zIndex": 2,
+        },
+        "suggestionsList": Object {
+          "listStyleType": "none",
+          "margin": 0,
+          "padding": 0,
+        },
+      }
+    }
+  />
+</StyledContainer>
+`;
