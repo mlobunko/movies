@@ -2,29 +2,6 @@
 # yarn lockfile v1
 
 
-"@fortawesome/fontawesome-common-types@^0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.4.tgz#7c560ff732c6c7c7c179ae25227ce5449e6f6d65"
-
-"@fortawesome/fontawesome-svg-core@^1.2.4":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.4.tgz#2e40c65e66c7ad5aabc179a2d7c5827b1599905c"
-  dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.4"
-
-"@fortawesome/free-solid-svg-icons@^5.3.1":
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.3.1.tgz#9660bece3c4850d58f1653e26c1693487ff74b08"
-  dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.4"
-
-"@fortawesome/react-fontawesome@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.1.2.tgz#baad4a6508867567aea20c1551bf62ff090d8121"
-  dependencies:
-    humps "^2.0.1"
-    prop-types "^15.5.10"
-
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
@@ -348,10 +325,6 @@ asynckit@^0.4.0:
 atob@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.1.tgz#ae2d5a729477f289d60dd7f96a6314a22dd6c22a"
-
-auto-suggest@^0.0.24:
-  version "0.0.24"
-  resolved "https://registry.yarnpkg.com/auto-suggest/-/auto-suggest-0.0.24.tgz#487b43b1a69e6deb18b9dc1e9d586a172c56bfc1"
 
 autoprefixer@7.1.6:
   version "7.1.6"
@@ -3494,10 +3467,6 @@ hosted-git-info@^2.1.4:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.6.0.tgz#23235b29ab230c576aab0d4f13fc046b0b038222"
 
-howler@^2.0.15:
-  version "2.0.15"
-  resolved "https://registry.yarnpkg.com/howler/-/howler-2.0.15.tgz#8f26d6548d29b257441fc190644b4392ce99ad32"
-
 hpack.js@^2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/hpack.js/-/hpack.js-2.1.6.tgz#87774c0949e513f42e84575b3c45681fade2a0b2"
@@ -3618,10 +3587,6 @@ http-signature@~1.2.0:
 https-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
-
-humps@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/humps/-/humps-2.0.1.tgz#dd02ea6081bd0568dc5d073184463957ba9ef9aa"
 
 husky@^0.14.3:
   version "0.14.3"
