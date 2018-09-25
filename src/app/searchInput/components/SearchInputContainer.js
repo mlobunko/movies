@@ -49,7 +49,8 @@ export class SearchInputContainer extends React.Component {
     const inputProps = {
       placeholder: 'Search Movie Title...',
       value,
-      onChange: this.onChange
+      onChange: this.onChange,
+      'aria-label': 'search movies'
     };
     return (
       <StyledContainer>
